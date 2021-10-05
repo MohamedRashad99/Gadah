@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1043946132939-n43gm61emge5v7tlktogl8ufpgvst80a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1043946132939-n43gm61emge5v7tlktogl8ufpgvst80a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBw4VOrJOXqZYh8IBNb8Ux8SxkvOrpO08M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1043946132939</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.conpoint.gadha</string>
+	<key>PROJECT_ID</key>
+	<string>gadha-2a4b8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gadha-2a4b8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1043946132939:ios:917b2df8e74a274918524e</string>
+	<key>DATABASE_URL</key>
+	<string>https://gadha-2a4b8.firebaseio.com</string>
+</dict>
+</plist>

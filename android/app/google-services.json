@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "236644273108",
+    "project_id": "gadha-31351",
+    "storage_bucket": "gadha-31351.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236644273108:android:5a7995f241946ca72ee441",
+        "android_client_info": {
+          "package_name": "com.conpoint.gadha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236644273108-3ohic0fc8j1eo2fe9jmbhukv28gmiq1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.conpoint.gadha",
+            "certificate_hash": "37caa70cdb7c94c9489ba1f4862c93e4c0d75445"
+          }
+        },
+        {
+          "client_id": "236644273108-cdharfksmpplri9mh3s52rdvq4rmkai2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5rr1oyHV1AyiksAOmW_3oWTMcSS7hnE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236644273108-cdharfksmpplri9mh3s52rdvq4rmkai2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

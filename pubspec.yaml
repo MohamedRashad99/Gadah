@@ -1,0 +1,87 @@
+name: gadha
+description: A new Flutter project.
+
+version: 1.0.0+4
+
+publish_to: "none"
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  app_settings: ^4.1.0
+  awesome_dialog: ^2.1.0
+  badges: ^2.0.1
+  blurrycontainer: ^0.0.1
+  cached_network_image: ^3.0.0
+  carousel_slider: ^4.0.0
+  cloud_firestore: ^2.5.1
+  cupertino_icons: ^1.0.2
+  curved_navigation_bar:
+    path: ./packages/curved_navigation_bar/
+  dio: ^4.0.0
+  dotted_border: ^2.0.0
+  fancy_shimmer_image: ^2.0.0-nullsafety.0
+  fcm_config: ^3.0.7
+  firebase_core: ^1.1.0
+  flutter:
+    sdk: flutter
+  flutter_chat_bubble:
+    path: ./packages/flutter_chat_bubble/
+  flutter_localizations:
+    sdk: flutter
+  flutter_parsed_text: ^2.1.0
+  flutter_platform_widgets: ^1.4.1
+  flutter_portal: ^0.4.0
+  flutter_rating_bar: ^4.0.0
+  flutter_show_more: ^0.1.2
+  flutter_staggered_animations: ^1.0.0
+  flutter_svg: ^0.22.0
+  geolocator: ^7.0.3
+  get: ^4.3.8
+  google_fonts: ^2.0.0
+  image_picker: ^0.7.4
+  laravel_exception: ^0.0.2-beta
+  location: ^4.1.1
+  maps_toolkit: ^2.0.0
+  multi_image_picker: ^4.8.0
+  path: ^1.8.0
+  path_provider: ^2.0.2
+  persistent_bottom_nav_bar: ^4.0.2
+  photo_view: ^0.11.1
+  pin_code_fields: ^7.0.0
+  place_picker: ^0.9.19-nullsafety
+  pretty_dio_logger: ^1.1.1
+  queen:
+    path: ./packages/queen/
+  sa_stateless_animation: ^2.0.0-nullsafety.0
+  share: ^2.0.4
+  sleek_circular_slider: ^2.0.0
+  smooth_star_rating: ^1.1.1
+  timer_count_down: ^2.0.1
+  url_launcher: ^6.0.3
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/Native/icon_logo_s.png"
+
+flutter_native_splash:
+  image: assets/Native/native_splash_logo_s.png
+  color: "#934DF4"
+
+dev_dependencies:
+  flutter_lints: ^1.0.4
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/Native/
+    - assets/MapStyle/
+    - assets/MapPins/
+    - assets/screens/
+    - assets/icons/
+    - assets/vectors/
+    - assets/componants/
