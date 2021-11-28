@@ -1,0 +1,1725 @@
+{
+	"info": {
+		"_postman_id": "7d99b122-d523-425f-b70f-3c2d8c6c0d9f",
+		"name": "gadha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "sign up as client",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed masoudd",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "966596610040",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amax@mail.coasqaaaaaa",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/EU1KgcoX0AIIuid.jpg"
+								},
+								{
+									"key": "stcpay",
+									"value": "9661231231241",
+									"type": "text"
+								},
+								{
+									"key": "type_role",
+									"value": "client",
+									"description": "client or dirver",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "mobile_token",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/auth/register",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign up as driver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed masoud",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "966123123119",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amax@mail.comaa",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/72393.jpg"
+								},
+								{
+									"key": "stcpay",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type_role",
+									"value": "driver",
+									"description": "client or dirver",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "license_img",
+									"description": "for dirvier only",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/241124592_372957520947187_1709118186767444412_n.jpg"
+								},
+								{
+									"key": "front_img",
+									"description": "for dirvier only",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/241124592_372957520947187_1709118186767444412_n.jpg"
+								},
+								{
+									"key": "back_img",
+									"description": "for dirvier only",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/241124592_372957520947187_1709118186767444412_n.jpg"
+								},
+								{
+									"key": "id_card_image",
+									"description": "for dirvier only",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/241124592_372957520947187_1709118186767444412_n.jpg"
+								},
+								{
+									"key": "car_number",
+									"value": "1234565",
+									"description": "for dirvier only",
+									"type": "text"
+								},
+								{
+									"key": "id_number",
+									"value": "1234565",
+									"description": "for dirvier only",
+									"type": "text"
+								},
+								{
+									"key": "mobile_token",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "form_img",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/241124592_372957520947187_1709118186767444412_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/auth/register",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base}}/auth/logout",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkcode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "966987654323",
+									"description": "// driver 966123123125",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "3849",
+									"description": "// 1111",
+									"type": "text"
+								},
+								{
+									"key": "mobile_token",
+									"value": "aaa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/auth/checkcode",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"checkcode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send otp code",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "966987654323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/auth/login",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{base}}/auth/user",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed masoudd",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "max@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/224925089_3028880087384225_7590027146166624381_n.jpg"
+								},
+								{
+									"key": "lat",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "lnag",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/auth/update_user",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"auth",
+								"update_user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "coupon",
+			"item": [
+				{
+					"name": "find one by key",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{base}}/coupon?coupon=123",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"coupon"
+							],
+							"query": [
+								{
+									"key": "coupon",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sliders",
+			"item": [
+				{
+					"name": "find many",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/sliders",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"sliders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "find many",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/categories",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "client orders",
+			"item": [
+				{
+					"name": "create one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"note\":\"some note\",\r\n    \"pick_place\":{\r\n        \"name\":\"foo\",\r\n        \"longitude\":123,\r\n        \"latitude\":123,\r\n        \"address\":\"aaaa\"\r\n    },\r\n   \"drop_place\":{\r\n        \"name\":\"foo\",\r\n        \"longitude\":123,\r\n        \"latitude\":123,\r\n        \"address\":\"aaaa\"\r\n    },\r\n    \"products\":[\r\n        {\r\n            \"name\":\"prodName\",\r\n            \"quantity\":5\r\n            \r\n        }\r\n    ]\r\n    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/client/orders",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"client",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find many paginate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "new",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/client/orders?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"client",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete one",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDA0ODJlMS01NjQ1LTQyYTctYjk3NS01MzQyOWFkNTM4NjgiLCJqdGkiOiI2NDViMzk3ZmFmOGExOTQxMzU2YzRmYTU3ZGNlMmUyZjc0NmQyMzY5YmZmNWQyMjJiNWY0MzU4MzU5MTIzOTIzZTZhYjNlZGI4ZDkzOGMzYiIsImlhdCI6MTYyNzQ4OTEzNiwibmJmIjoxNjI3NDg5MTM2LCJleHAiOjE2NTkwMjUxMzYsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.ZnzRByFAaNii6-aRteFsAyMsuWKpAZEgpI4FcjsmFE9NLtO5y_WA70T50J088HoaioTe9gcfh7cvYfbevavt_2P5CjMKHs_rS3ZhoaBp3wsGo3sP1McfK-W_JSBTUG9XnLFaILPw5pS2P1CFqe0OBh8V79p1koMKYZ_ZIC6LvFam1IoP8IehoEmarPyOkryOb6W1DhqzcCCGCkgEqpGwrvzUX9mrDV3092eYg4qsfusbTB8STRv6Ys_WVIiAJEQBxFWp7TOtTKeayheWdmUWnWzY_Hy4gL2C_hgsWF0tKO2cJkiLZJCgEeZouiIocpm3z8pl_tHbd1cAtWN5-8VknI2CRzp9LLvLuB6mvI4Gvz98NxzOwuF-5Az3un7hsyAWMYI8XABI_5B4y-sW0HInXXnwDTSN_T2wniGpOidJdbXWbDoG1-3wLVdgsgKV0FmFqbX-SsN7yI3_4Q9UQjn8aGzdO7dFsRjpAPVwByqEEtVfH-ngQ_0cqZVtmUBR1DxeR4UABJ3WPLl9Vg120X-M8drs_2VAUrK-Bn9TTAPVFldWGUqUAAp6JfnnjCEA6gNHbIpjOlrlxnV32Vf9F4EzhPGeooGndlbWrFBN6jy4-qxnbhfbuOMYlD6-BfR-Pt2I75ri_RgmIweROMfluS3vjAeno12j0-2eGg0hM6KveJ8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/client/orders/:id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"client",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "driver orders",
+			"item": [
+				{
+					"name": "find many paginate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "new",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/orders?status=done",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "done"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find many paginate Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDA0ODJlMS01NjQ1LTQyYTctYjk3NS01MzQyOWFkNTM4NjgiLCJqdGkiOiI2NDViMzk3ZmFmOGExOTQxMzU2YzRmYTU3ZGNlMmUyZjc0NmQyMzY5YmZmNWQyMjJiNWY0MzU4MzU5MTIzOTIzZTZhYjNlZGI4ZDkzOGMzYiIsImlhdCI6MTYyNzQ4OTEzNiwibmJmIjoxNjI3NDg5MTM2LCJleHAiOjE2NTkwMjUxMzYsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.ZnzRByFAaNii6-aRteFsAyMsuWKpAZEgpI4FcjsmFE9NLtO5y_WA70T50J088HoaioTe9gcfh7cvYfbevavt_2P5CjMKHs_rS3ZhoaBp3wsGo3sP1McfK-W_JSBTUG9XnLFaILPw5pS2P1CFqe0OBh8V79p1koMKYZ_ZIC6LvFam1IoP8IehoEmarPyOkryOb6W1DhqzcCCGCkgEqpGwrvzUX9mrDV3092eYg4qsfusbTB8STRv6Ys_WVIiAJEQBxFWp7TOtTKeayheWdmUWnWzY_Hy4gL2C_hgsWF0tKO2cJkiLZJCgEeZouiIocpm3z8pl_tHbd1cAtWN5-8VknI2CRzp9LLvLuB6mvI4Gvz98NxzOwuF-5Az3un7hsyAWMYI8XABI_5B4y-sW0HInXXnwDTSN_T2wniGpOidJdbXWbDoG1-3wLVdgsgKV0FmFqbX-SsN7yI3_4Q9UQjn8aGzdO7dFsRjpAPVwByqEEtVfH-ngQ_0cqZVtmUBR1DxeR4UABJ3WPLl9Vg120X-M8drs_2VAUrK-Bn9TTAPVFldWGUqUAAp6JfnnjCEA6gNHbIpjOlrlxnV32Vf9F4EzhPGeooGndlbWrFBN6jy4-qxnbhfbuOMYlD6-BfR-Pt2I75ri_RgmIweROMfluS3vjAeno12j0-2eGg0hM6KveJ8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "new",
+									"description": "required|in:connecting,done'",
+									"type": "text"
+								},
+								{
+									"key": "products_price",
+									"value": "",
+									"description": "required if  $request->status == 'done' and $order->place->type == 0;",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/orders/:id/update_status",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"orders",
+								":id",
+								"update_status"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notificationhs",
+			"item": [
+				{
+					"name": "find many",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/notifications",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read notification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/readNotification/:id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"readNotification",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete one",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/notifications_delete",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"notifications_delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id_to",
+									"value": "1",
+									"description": "user to send to",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "body",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "title",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/general/sendMassage",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"general",
+								"sendMassage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create one Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id_to",
+									"value": "1",
+									"description": "user to send to",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "body",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "title",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/arravie_drop_place/:orderId",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"arravie_drop_place",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "settings",
+			"item": [
+				{
+					"name": "show settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/general/settings",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"general",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "complaints",
+			"item": [
+				{
+					"name": "create one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "complaints title new",
+									"type": "text"
+								},
+								{
+									"key": "massage",
+									"value": "massage new",
+									"type": "text"
+								},
+								{
+									"key": "images[0]",
+									"description": " array",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/241266337_4374746119289025_4934273760263638770_n.jpg"
+								},
+								{
+									"key": "images[0]",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/complaints",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"complaints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find many",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/complaints",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"complaints"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reviews",
+			"item": [
+				{
+					"name": "find many for user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/user/reviews?user_id=2",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"user",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rate order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "comment",
+									"value": "adad2",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "2",
+									"description": "1-5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/orders/:orderId/review",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"orders",
+								":orderId",
+								"review"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "driver",
+			"item": [
+				{
+					"name": "meta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "new",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/meta",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"meta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "finish order",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/driver/finish-order/:id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"finish-order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "payments confirmation",
+			"item": [
+				{
+					"name": "create one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/data/con-point/soquk/693f7422-2d5e-4bae-accf-645ca4c7e9d4.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/bank_bills",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"bank_bills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find many for auth user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/driver/bank_bills",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"bank_bills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "offers",
+			"item": [
+				{
+					"name": "client",
+					"item": [
+						{
+							"name": "find many by order id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "price",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base}}/orders/:id/offers",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"orders",
+										":id",
+										"offers"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accept offer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{base}}/orders/:id/offers/:offerId",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"orders",
+										":id",
+										"offers",
+										":offerId"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										},
+										{
+											"key": "offerId",
+											"value": "11"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "driver",
+					"item": [
+						{
+							"name": "create one",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "price",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base}}/offers",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"offers"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "order bills",
+			"item": [
+				{
+					"name": "driver",
+					"item": [
+						{
+							"name": "create one",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/maxzo/OneDrive/Desktop/EU1KgcoX0AIIuid.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base}}/bills",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"bills"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete one",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base}}/orders/:orderId/bills/:billId",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"orders",
+										":orderId",
+										"bills",
+										":billId"
+									],
+									"variable": [
+										{
+											"key": "orderId",
+											"value": "1"
+										},
+										{
+											"key": "billId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "shared",
+					"item": [
+						{
+							"name": "find order bills",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base}}/orders/:id/bills",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"orders",
+										":id",
+										"bills"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "bank bills",
+			"item": [
+				{
+					"name": "create one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/download.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/bank_bills",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"bank_bills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find many",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/236261700_3563558740413490_715884014329430272_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/driver/bank_bills",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"driver",
+								"bank_bills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "media files",
+			"item": [
+				{
+					"name": "find one",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/media_files/:id",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"media_files",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/maxzo/OneDrive/Desktop/download.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/media_files",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"media_files"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sms provider",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.hisms.ws/api.php?send_sms&username=966534066660&password=F123456kh&numbers=966596610095&sender=Gadha&message=وصلتك الرساله ؟",
+					"protocol": "https",
+					"host": [
+						"www",
+						"hisms",
+						"ws"
+					],
+					"path": [
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "send_sms",
+							"value": null
+						},
+						{
+							"key": "username",
+							"value": "966534066660"
+						},
+						{
+							"key": "password",
+							"value": "F123456kh"
+						},
+						{
+							"key": "numbers",
+							"value": "966596610095"
+						},
+						{
+							"key": "sender",
+							"value": "Gadha"
+						},
+						{
+							"key": "message",
+							"value": "وصلتك الرساله ؟"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDVkNDEwMi02MWMxLTQ4MmEtOTIwMS0wMGRhMTRlNDI2MDkiLCJqdGkiOiIxYzI0ZWFiNmU4OWVhYjMzMTBmNDkyNzMxYmJkMWNkNzM4MjMxZjRlZTJhZjM1ZTk5Yzc1OWQzNGViYmFhMjFlNDdjMzk1MjMwZTM0YTRiMCIsImlhdCI6MTYzMTM1OTI5NiwibmJmIjoxNjMxMzU5Mjk2LCJleHAiOjE2NjI4OTUyOTYsInN1YiI6IjEwIiwic2NvcGVzIjpbXX0.jfJOp98kJma2TgoG9E-kjYS5aOH021silp-8-kGdizADV9tc8Ysccc9RbZ4VbHeJK5kk0nZ69MGboms3tn2keaTj82ac4zI1IXheTCgRTT_bginx5mjRj3vCyRhGEhTtZkKRsrH8J_XHAfF2qHuDJN_Od5ZmNMuWhZNVstBwuVd3xb9-V0WKr6Klx9gk9aFnhd1fKkmam5fU1SjdKksaGEkKWU-hYGo4QdjWppXNWqlon1pOIheVQOvDDiqLYx6z5rXFDFHgXKLh_XfwsbbVtrbU8oAkdR5TFI2GRYaqUlySyupHuwZckKvyMAeLd3iOQx_iVoDgRQM5zihYEa5zrKHzryQFnisrVtaD_MiexS5VpK9NACcFToRGPx9aG31vhTQasi0W1eviNQCgMahICtpUKC_ts1jMjrthKAR-Wryrum1FCzg8DWysKKFSlDLDKZKyAKcQlthDTMzgAWRdRKGAG7ivtU5-9jLE83ExynPHaTp49asZxw9qB1hEyvdiYNPU-7AMSJsxrdE7GJJK0yFOnJxupXPsrLeFokS8rTbCAgd0b3fVf4j2BfaN6VQ0uFAHU7Fz9jhtGvJyHaAxT2q_UCxWi-42kjkdQ7uEJ9awZtDkLQYTuylI9ZyzkxOWUESf6gcBS4_utgDmcu7awLGPSoVXV7vCJ3JnnGCHucI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "http://127.0.0.1:8000/ar/api"
+		},
+		{
+			"key": "base",
+			"value": "https://gadha.con-point.com/ar/api"
+		}
+	]
+}
